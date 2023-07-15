@@ -24,12 +24,12 @@ const ImageUpload = ({ defaultValue, setValue, name = 'image' }) => {
     try {
       const formData = new FormData()
       // adding upload preset
-      formData.append('upload_preset', 'gqv25gzj')
+      formData.append('upload_preset', 'uofgfqcn')
 
       for (const file of fileInput.files) {
         formData.append('file', file)
       }
-      const res = await fetch('https://api.cloudinary.com/v1_1/scrapbook/image/upload', {
+      const res = await fetch('https://api.cloudinary.com/v1_1/dnoel2heo/image/upload', {
         method: 'POST',
         body: formData,
       })

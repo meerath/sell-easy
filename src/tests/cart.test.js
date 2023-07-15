@@ -15,7 +15,7 @@ describe('Cart API', () => {
     await User.deleteMany({})
 
     const tempUser = new User({
-      name: 'Giridhar',
+      name: 'meerath',
       email: 'meerathkonapalli007@gmail.com',
       password: await hash('password123', 12),
       phoneNumber: '1234567890',

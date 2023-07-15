@@ -22,7 +22,7 @@ describe('Authentication API', () => {
       // Create a mock user
       await User.deleteMany({})
       const tempUser = new User({
-        name: 'Giridhar',
+        name: 'meerath',
         email: 'meerathkonapalli007@gmail.com',
         password: await hash('password123', 12),
         phoneNumber: '1234567890',
@@ -52,7 +52,7 @@ describe('Authentication API', () => {
       // Create a mock user
       await User.deleteMany({})
       const user = new User({
-        name: 'Giridhar',
+        name: 'meerath',
         email: 'meerathkonapalli007@gmail.com',
         password: await hash('password123', 12),
         phoneNumber: '1234567890',
@@ -67,7 +67,7 @@ describe('Authentication API', () => {
       // Create a mock user
       await User.deleteMany({})
       const user = new User({
-        name: 'Giridhar',
+        name: 'meerath',
         email: 'meerathkonapalli007@gmail.com',
         password: await hash('password123', 12),
         phoneNumber: '1234567890',
@@ -91,7 +91,7 @@ describe('Authentication API', () => {
       await User.deleteMany({})
       testUser = new User({
         name: 'Test User',
-        email: 'giridhar.talla2002@gmail.com',
+        email: 'meerath.talla2002@gmail.com',
         password: await hash('password', 12),
         phoneNumber: '1234567890',
       })
