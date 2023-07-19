@@ -29,7 +29,8 @@ const ProductCard = ({ product }) => {
             'z-11 absolute top-2 right-2 rounded-full border-0 bg-white p-2 shadow outline-0 hover:bg-gray-100',
             wishlisted && 'text-pink-600'
           )}
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault()
             setWishlisted((prev) => !prev)
             wishlisted ? removeProductFromWishlist(product._id) : addProductToWishlist(product._id)
           }}
