@@ -4,8 +4,7 @@ import React from 'react'
 
 const CategoryList = () => {
   const { categories } = useCategory()
-  return (
-    categories.length && (
+  return ((
       <div className="my-12 w-full">
         <h2 className="text-2xl font-semibold">Category:</h2>
         <p className="text-md">
